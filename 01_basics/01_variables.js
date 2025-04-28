@@ -9,7 +9,7 @@ accCity = "Kalaburagi"
 let accState;
 
 /*
-    never use var in javascript.
+    Prefer not to use 'var', because of the issue of block scope and functional scope.
 */
 console.log(accId);
-console.table([accId, accName, emailId, accCity, accState]);
+console.table([accId, accName, emailId, accCity, accState]); // accState will be undefined in the result, bcoz the variable is just declared, not defined.
